@@ -1,11 +1,12 @@
-# Algorithmic complexity / Big-O / Asymptotic analysis
+# Big O Notation is used to analyze the efficiency of an algorithm as its input approaches infinity
 
-## Big O Notation is used to analyze the efficiency of an algorithm as its input approaches infinity
+> and is used to represent the upper bounds of a function
+
+## Orders of Growth
 
 ![complexity](/assets/images/Big-OComplexityChart.png)
 (https://www.bigocheatsheet.com/)
 
-### Orders of Growth
 - *O*(1) - **Constant**
     - will execute in the same amount of time regards the size of the data
     - random access of an element in an array or inserting at the beginning of linked list
@@ -42,3 +43,35 @@
 
 - *O*(n!) - **Factorial**
     - something
+
+### Asymptotic Analysis
+- Inventory
+    - 10,000 ms to read inventory from disk
+    - 10 ms to process each transaction
+    - n tractions takes (10,000 + 10n)
+        - so the second number would be more important if n is large
+
+
+### Binary Numbers
+| binary | integer |
+| -----  | ---|
+| 0000   | 0  |
+| 0001   | 1  |
+| 0010   | 2  |
+| 0011   | 3  |
+| 0100   | 4  |
+| 0101   | 5  |
+| 0110   | 6  |
+| 0111   | 7  |
+| 1000   | 8  |
+| 1001   | 9  |
+| 1010   | 10 |
+| 1011   | 11 |
+| 1100   | 12 |
+| 1101   | 13 |
+| 1110   | 14 |
+| 1111   | 15 |
+| 10000  | 16 |
+
+
+starting from right, if see 1, flip to 0, keep doing that as long as you see 1, and then the first time you see a 0, make it a 1, then we're done
